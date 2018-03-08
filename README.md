@@ -7,5 +7,5 @@ Informações gerais:
 Todos os algoritmos foram implementados utilizando a linguagem de programação Java.
 
 - Trabalho 1: Selection e Insertion Sort - 
-Ambos os algoritmos os algoritmos foram implementados utilizando um bloco de notas (Notepad++) e compilados a partir do prompt de comando do Windows. Para compilar basta salvar o código disponibilizado no github e executar pelo prompt de comando. Para a criação do vetor que será ordenado, foram atribuídos 5 valores randômicos, utilizando java.util.Random;
+Ambos os algoritmos foram implementados utilizando um bloco de notas (Notepad++) e compilados a partir do prompt de comando do Windows. Para compilar basta salvar o código disponibilizado no github e executar pelo prompt de comando. Para a criação do vetor que será ordenado, foram atribuídos 5 valores randômicos, utilizando java.util.Random;
 
