@@ -12,25 +12,26 @@ public class Insertion{
 	    }
 		return vetor;
 	}
-	
+
+
 	private static void insertionSort(int[] vetor){
-		for(int i=1; i<vetor.length; i++){
-			
-			int escolhido = vetor[i];
-			int j=i-1;
-			
-			while ((j>=0)&&(vetor[j]> escolhido)){
+		int aux;
+		for (int i=1; i<vetor.length; i++){
+			aux = vetor[i];
+			for(int j=i-1; j>=0 && vetor[j]>aux; j--){
 				vetor[j+1] = vetor[j];
-				j--;
+				vetor[j] = aux;
 			}
-			vetor[j+1] = escolhido;
+
 		}
+
 	}
 	
 	public static void main(String[] args){
-		int []vetor = criaVetor(10);
+		int []vetor = criaVetor(5);
+		System.out.println("O vetor desordenado e': " + Arrays.toString(vetor));
 		insertionSort(vetor);
-		System.out.println(Arrays.toString(vetor));
+		System.out.println("O vetor ordenado e': " + Arrays.toString(vetor));
 		
 	}
 }	
