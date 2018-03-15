@@ -55,7 +55,7 @@ public class Quick{
 	
 
 	public static void main(String[] args){
-		int []vetor = criaVetor(10);
+		int []vetor = criaVetor(5);
 		
 		System.out.println("O vetor desordenado e':");
 		System.out.println(Arrays.toString(vetor));
