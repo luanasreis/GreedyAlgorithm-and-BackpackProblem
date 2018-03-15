@@ -14,9 +14,7 @@ public class Merge{
 	
 	public static void mergeSort (int[] vetor, int[] aux, int ini, int fim){
 		if(ini < fim) {
-			int meio = (ini + fim)/2; // divide o vetor ao meio, calcula o item do meio
-			// chamo o merge sort recursivamente para ordenar a primeira metade, e a segunda metade
-			//System.out.println("O elemento do meio e' %d:" meio);
+			int meio = (ini + fim)/2; 
 			mergeSort(vetor, aux, ini, meio);
 			mergeSort(vetor, aux, meio+1, fim);
 			merge(vetor, aux, ini, meio, fim);
@@ -24,15 +22,15 @@ public class Merge{
 	}
 	
 	public static void merge(int[] vetor, int[] aux, int ini, int meio, int fim){
-		int i=ini; // variavel que vai correr a primeira metade do vetor
-		int j=meio+1; // variavel que vai correr a segunda metade do vetor
+		int i=ini;
+		int j=meio+1; 
 
 
 		for(int k=ini; k<=fim; k++){
-			if(i>meio){ // verifica se o vetor esquerdo acabou
+			if(i>meio){ 
 				aux[k]=vetor[j];
-				j++; // se o vetor esquerdo acabou, adiciono os elementos do vetor direito
-			} else if (j>fim){ // se o vetor direito acabar, adiciono os elementos do vetor esquerdo
+				j++; 
+			} else if (j>fim){
 			    aux[k] = vetor[i];
 			    i++;
 			} else if(vetor[i]<vetor[j]){
@@ -46,7 +44,7 @@ public class Merge{
 		}
 
 		for(int k=ini; k<=fim; k++){
-			vetor[k]=aux[k]; // faço uma copia do vetor ordenado aux para o vetor original
+			vetor[k]=aux[k];
 		}
 
 	}
