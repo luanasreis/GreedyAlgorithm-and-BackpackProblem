@@ -136,9 +136,9 @@ void Grafo::algoritmoKruskal(){
     this->nosVisitados.push_back(this->noVetor[i]);
   }
 
-  cout << "Caminho Prim: " << endl;
+  cout << "Caminho Kruskal: " << endl;
   for(int i=0; i<this->nosVisitados.size(); i++){
-      cout << "No visitado pelo Prim: " << this->nosVisitados[i]->nome << endl;
+      cout << "No visitado pelo Kruskal: " << this->nosVisitados[i]->nome << endl;
   }
 }
 */
