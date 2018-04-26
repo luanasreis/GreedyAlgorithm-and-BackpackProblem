@@ -9,7 +9,7 @@ class Grafo{
   public:
     vector<No*> noVetor;
     vector<No*> nosVisitados;
-    //Graph();
+    
     void criaGrafo(No*);
     int encontraNoVetor(No*);
     int getNoPorNome(string);
